@@ -9,3 +9,7 @@ def add(a: float, b: float) -> float:
 def subtract(a: float, b: float) -> float:
     """Возвращает разность двух чисел."""
     raise NotImplementedError
+
+def subtract(a: float, b: float) -> float:
+    """Возвращает разность двух чисел."""
+    return a - b
