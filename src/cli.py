@@ -25,7 +25,7 @@ def main() -> int:
         print(f"Результат: {result}")
         return 0
     except ZeroDivisionError as e:
-        print(f"Ошибка: {e}", file=sys.stderr)
+        print(f"Ошибка вычисления: {e}. Проверьте введённые значения.", file=sys.stderr)
         return 1
 
 
