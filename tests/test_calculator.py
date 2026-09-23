@@ -1,6 +1,6 @@
 """Тесты арифметических операций."""
 
-from src.calculator import add, subtract, multiply
+from src.calculator import add, subtract, multiply, divide
 
 
 def test_add():
@@ -16,3 +16,14 @@ def test_multiply():
     assert multiply(3, 4) == 12
     assert multiply(-2, 3) == -6
     assert multiply(0, 100) == 0
+
+def test_divide():
+    assert divide(10, 2) == 5
+    assert divide(9, 3) == 3
+
+
+def test_divide_by_zero():
+    import pytest
+
+    with pytest.raises(ZeroDivisionError):
+        divide(10, 0)

@@ -17,3 +17,13 @@ def subtract(a: float, b: float) -> float:
 def multiply(a: float, b: float) -> float:
     """Возвращает произведение двух чисел."""
     return a * b
+
+def divide(a: float, b: float) -> float:
+    """Возвращает частное двух чисел.
+
+    Raises:
+        ZeroDivisionError: если b равно нулю.
+    """
+    if b == 0:
+        raise ZeroDivisionError("Деление на ноль недопустимо")
+    return a / b
