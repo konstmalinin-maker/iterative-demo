@@ -13,3 +13,7 @@ def subtract(a: float, b: float) -> float:
 def subtract(a: float, b: float) -> float:
     """Возвращает разность двух чисел."""
     return a - b
+
+def multiply(a: float, b: float) -> float:
+    """Возвращает произведение двух чисел."""
+    return a * b
